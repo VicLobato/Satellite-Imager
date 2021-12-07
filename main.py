@@ -1,6 +1,7 @@
 from requests import get  # Get images from online API
 from io import BytesIO    # Image to Byte convertsion
 from PIL import Image     # Image Manipulation
+from time import time     # Time library
 import math               # Math library
 
 # This converts a latitude and longitude Into a tile number
@@ -22,6 +23,16 @@ def getImg(xt, yt, z):
     )
   return Image.open(BytesIO(r.content))
 
+# Estimate time remaining using moving averages
+def timeEst(s, t, p1, p2, xc, yc):
+  if len(t) < 10:
+    t.append(s)
+  else:
+    t.append(s)
+    t.pop(0)
+
+  print(f'Eta: {round(100*((sum(t)/len(t))*((abs(p1[0]-p2[0])*abs(p1[1]-p2[1])) -(xc*yc))))/100}')
+
 def main(fn='out'):
   # two latitude/longitude coordinates
   p1, p2 = (
@@ -29,7 +40,8 @@ def main(fn='out'):
     (38.909308, -77.020259))
   # Zoom levels work on a logarthimic scale
   z = 15
-
+  
+  t = []
   # Generate the tile numbers
   p1, p2 = (
     convert(*p1, z),
@@ -40,7 +52,9 @@ def main(fn='out'):
   img = Image.new('RGB', (512*(abs(p1[0]-p2[0])+1), 512*(abs(p1[1]-p2[1])+1)))
   for xc,xt in enumerate(range(min(p1[0], p2[0]), max(p1[0], p2[0])+1)):
     for yc,yt in enumerate(range(min(p1[1], p2[1]), max(p1[1], p2[1])+1)):
+      s = time()
       img.paste(getImg(xt, yt, z), (xc*512, yc*512))
+      timeEst(time()-s, t, p1, p2, xc, yc)
   img.save(f'{fn}.png')
   
 if __name__ == '__main__':
