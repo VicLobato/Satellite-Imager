@@ -39,7 +39,7 @@ def main(fn='out'):
     (38.891812, -77.055398),
     (38.909308, -77.020259))
   # Zoom levels work on a logarthimic scale
-  z = 14
+  z = 15
   t = []
   # Generate the tile numbers
   p1, p2 = (
