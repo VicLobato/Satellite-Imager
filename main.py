@@ -40,13 +40,11 @@ def main(fn='out'):
     (38.909308, -77.020259))
   # Zoom levels work on a logarthimic scale
   z = 15
-  
   t = []
   # Generate the tile numbers
   p1, p2 = (
     convert(*p1, z),
-    convert(*p2, z)
-    )
+    convert(*p2, z))
   # Iterate over the x/y tiles in a square
   # The square is formed to cover the two inputted points
   img = Image.new('RGB', (512*(abs(p1[0]-p2[0])+1), 512*(abs(p1[1]-p2[1])+1)))
