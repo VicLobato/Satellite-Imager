@@ -36,8 +36,8 @@ def timeEst(s, t, p1, p2, xc, yc):
 def main(fn='out'):
   # two latitude/longitude coordinates
   p1, p2 = (
-    (51.485556, -0.169958),
-    (51.534091, -0.067033))
+    (38.891812, -77.055398),
+    (38.909308, -77.020259))
   # Zoom levels work on a logarthimic scale
   z = 15
   
@@ -45,7 +45,8 @@ def main(fn='out'):
   # Generate the tile numbers
   p1, p2 = (
     convert(*p1, z),
-    convert(*p2, z))
+    convert(*p2, z)
+    )
   # Iterate over the x/y tiles in a square
   # The square is formed to cover the two inputted points
   img = Image.new('RGB', (512*(abs(p1[0]-p2[0])+1), 512*(abs(p1[1]-p2[1])+1)))
