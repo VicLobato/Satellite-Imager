@@ -9,14 +9,13 @@
 <div align="center">
     <img src="https://img.shields.io/github/languages/code-size/VicLobato/Satellite-Imager?label=Code%20Size" alt="Size in bytes"/>
     <img src="https://img.shields.io/github/downloads/VicLobato/Satellite-Imager/total?label=Downloads" alt="Amount of downloads"/>
-    <img src="https://img.shields.io/github/license/VicLobato/Satellite-Imager" alt="License"/>
 </div>
 
 ## Usage
 WIP
 
 ## Bugs and Suggestions
-Bug reports and suggestions should be made in this repo's [issue tracker](https://github.com/VicLobato/FileShare/issues) . Please include as much information as possible.
+Bug reports and suggestions should be made in this repo's [issue tracker](https://github.com/VicLobato/Satellite-Imager/issues) . Please include as much information as possible.
 
 ## Licensing
 This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). 
