@@ -1,13 +1,26 @@
-# Satellite-Imager
-This is a program that can taken 2 coordinate points, a zoom level and using an online api - generate a satellite image.
+<p align="center">
+<img src="src/logo.png" alt="Satellite Imager logo" width="20%"/>
+</p>
 
-<img src="images/white house.png"
-     alt="An aerial view of the whitehouse"
-     style="float: left; margin-right: 10px;" />
+<h1 align="center">Satellite Imager</h1>
 
-The program works by downloading 512x512 tiles, and stitching them together.
-The following image shows an example with black margins between tiles.
+<p align="center">Software to view the earth</p>
 
-<img src="images/sagrada familia.png"
-     alt="An aerial view of the sagrada familia - a cathedral"
-     style="float: left; margin-right: 10px;" />
+<div align="center">
+    <img src="https://img.shields.io/github/languages/code-size/VicLobato/Satellite-Imager?label=Code%20Size" alt="Size in bytes"/>
+    <img src="https://img.shields.io/github/downloads/VicLobato/Satellite-Imager/total?label=Downloads" alt="Amount of downloads"/>
+    <img src="https://img.shields.io/github/license/VicLobato/Satellite-Imager" alt="license"/>
+</div>
+
+## Usage
+WIP
+
+## Bugs and Suggestions
+Bug reports and suggestions should be made in this repo's [issue tracker](https://github.com/VicLobato/FileShare/issues) . Please include as much information as possible.
+
+## Licensing
+This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). 
+
+If you use **ANY** code from the source:
+- You must disclose the source code of your modified work, and the source code you took from this project. This means you are not allowed to use code from this project (even partially) in a closed-source and/or obfuscated application.
+- Your application must also be licensed under the same license.
