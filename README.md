@@ -11,6 +11,7 @@
     <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/VicLobato/Satellite-Imager/total?label=Downloads">
     <img alt="GitHub" src="https://img.shields.io/github/license/VicLobato/Satellite-Imager?label=License">
     <img alt="GitHub release (release name instead of tag name)" src="https://img.shields.io/github/v/release/VicLobato/satellite-imager?include_prereleases&label=Release&sort=date">
+    <img src="https://img.shields.io/github/last-commit/VicLobato/Satellite-Imager?label=Last%20Commit" alt="GitHub last commit"/>
 </div>
 
 ## Usage
