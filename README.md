@@ -8,7 +8,7 @@
 
 <div align="center">
     <img src="https://img.shields.io/github/languages/code-size/VicLobato/Satellite-Imager?label=Code%20Size" alt="Size in bytes"/>
-    <img src="https://img.shields.io/github/downloads/VicLobato/Satellite-Imager/total?label=Downloads" alt="Amount of downloads"/>
+    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/VicLobato/Satellite-Imager/total">
     <img alt="GitHub" src="https://img.shields.io/github/license/VicLobato/Satellite-Imager?label=License">
 </div>
 
