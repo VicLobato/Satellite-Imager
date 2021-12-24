@@ -1,3 +1,4 @@
+from tkinter import TclError       # Detect when window destroyed
 from requests import get           # Get images from online API
 from graphics import Gui           # Gui object
 from PIL import Image              # Image object
@@ -40,7 +41,6 @@ def update():
                 # Check for update to exit
                 cd = [g.root.winfo_width(), g.root.winfo_height(), lat, lon]
                 if od != cd:
-                    print('Redrawing.')
                     od = cd
                     return
 
@@ -67,4 +67,8 @@ def main():
             g.upd()
     
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as e:
+        if type(e) != TclError:
+            raise
