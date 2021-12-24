@@ -29,13 +29,10 @@ def getImg(xt, yt, z, rf):
 def update():
     global zoom, lat, lon, g, od
 
+    xt, yt = convert(lat, lon, zoom)
     for zc in range(3):
         z = zoom + zc
-        it = 2**(zc)
-
-        xt, yt = convert(lat, lon, math.ceil(z))
-        xt = math.ceil(xt/it)*it
-        yt = math.ceil(yt/it)*it
+        
         for x in range(math.ceil(g.root.winfo_width()/(512//(2**zc)))):
             for y in range(math.ceil(g.root.winfo_height()/(512//(2**zc)))):
                 # Check for update to exit
@@ -49,13 +46,15 @@ def update():
                 getImg(xta, yta, z, zc)
                 g.addImg(x*(512//(2**zc)), y*(512//(2**zc)))
                 g.upd()
+        xt *= 2
+        yt *= 2
 
 def main():
     global zoom, lat, lon, g, od
 
     g = Gui()
 
-    zoom, lat, lon = 12, 51.410008, -0.103875
+    zoom, lat, lon = 14, 51.410008, -0.103875
     od = [600, 600, lat, lon] # OLD DATA width, height, x, y
 
     while 1:
@@ -71,4 +70,4 @@ if __name__ == '__main__':
         main()
     except Exception as e:
         if type(e) != TclError:
-            raise
+            g.error(e)
