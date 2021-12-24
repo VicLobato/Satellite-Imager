@@ -13,7 +13,8 @@
 </div>
 
 ## Usage
-WIP
+Run the main.py found within /src. It will generate a temporary image file called temp.png when generating.
+The program automatically generates tiles in recursive sizes, so detail is progressivly increased.
 
 ## Bugs and Suggestions
 Bug reports and suggestions should be made in this repo's [issue tracker](https://github.com/VicLobato/Satellite-Imager/issues) . Please include as much information as possible.
