@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/github/languages/code-size/VicLobato/Satellite-Imager?label=Code%20Size" alt="Size in bytes"/>
     <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/VicLobato/Satellite-Imager/total?label=Downloads">
     <img alt="GitHub" src="https://img.shields.io/github/license/VicLobato/Satellite-Imager?label=License">
-    <img alt="GitHub release (release name instead of tag name)" src="https://img.shields.io/github/v/release/VicLobato/satellite-imager?include_prereleases&sort=date?label=Release">
+    <img alt="GitHub release (release name instead of tag name)" src="https://img.shields.io/github/v/release/VicLobato/satellite-imager?include_prereleases&label=Release&sort=date">
 </div>
 
 ## Usage
